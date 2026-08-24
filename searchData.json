@@ -1,0 +1,246 @@
+[
+  {
+    "component": "kari",
+    "componentPrimaryName": "Tourism Explorer",
+    "templateID": 0,
+    "entities": [
+      {
+        "word": "NYC",
+        "wgID": 1000,
+        "wgName": "CITIES",
+        "collectionName": "CITIES",
+        "collectionType": "HD_LOCATION",
+        "wgUGC": 0,
+        "templateID": 0,
+        "entityInfo": {
+          "geo": {
+            "tz": "America/New_York",
+            "lat": 40.7128,
+            "city": "New York City",
+            "long": -74.006,
+            "state": "New York",
+            "country": "United States",
+            "district": null,
+            "stateAbb": "NY",
+            "stateCode": "US.NY",
+            "countryQID": "Q30",
+            "countryCode": "US",
+            "districtCode": ""
+          },
+          "manual": 1,
+          "labelSource": "wiki"
+        },
+        "compInfo": null,
+        "entityType": "LOCATION",
+        "sourceID": "5128581",
+        "IDs": {
+          "wikiQID": "Q60",
+          "TPcityID": 20857,
+          "geonameID": 5128581
+        },
+        "componentName": "kari",
+        "componentID": 0,
+        "info": {
+          "Type": "cities"
+        },
+        "description": "largest city in the United States",
+        "qualifierReqd": 0,
+        "priority": 3,
+        "isEnabled": 1,
+        "keywordRequired": 0,
+        "primaryText": "",
+        "relevanceScore": 100,
+        "sourceValue": 9454995,
+        "index": 23,
+        "wgInfo": {
+          "Type": "cities"
+        },
+        "primaryID": "5128581"
+      }
+    ],
+    "query": "Tourist attractions in NYC",
+    "componentEnabled": true,
+    "keyword": [
+      {
+        "word": "tourist attractions",
+        "description": ""
+      }
+    ],
+    "compInfo": null,
+    "queryTerm": "tourist attractions in nyc",
+    "disambiguationType": 3,
+    "userLocation": {
+      "position": {
+        "coords": {
+          "latitude": 40.7128,
+          "longitude": -74.006
+        },
+        "city": "New York",
+        "country": "United States",
+        "countryCode": "US"
+      }
+    },
+    "genericQuery": "tourist attractions in HD_LOCATION__CITIES",
+    "unambiguous": true,
+    "unresolvedQuery": "",
+    "queryRegex": "tourist\\s+attractions?\\s+(in|near)\\s+HD_LOCATION__([^\\s]+)(__\\w+)?.*",
+    "quickView": 3,
+    "suggestedPlace": "mainline",
+    "_processedQuery": "tourist attractions in nyc",
+    "_disambiguationType": 3,
+    "componentType": "internal"
+  },
+  {
+    "component": "kari",
+    "componentPrimaryName": "Tourism Explorer",
+    "templateID": 0,
+    "entities": [
+      {
+        "word": "Paris",
+        "wgID": 1001,
+        "wgName": "CITIES",
+        "collectionName": "CITIES",
+        "collectionType": "HD_LOCATION",
+        "wgUGC": 0,
+        "templateID": 0,
+        "entityInfo": {
+          "geo": {
+            "tz": "Europe/Paris",
+            "lat": 48.8566,
+            "city": "Paris",
+            "long": 2.3522,
+            "state": "Île-de-France",
+            "country": "France",
+            "countryCode": "FR"
+          },
+          "manual": 1,
+          "labelSource": "wiki"
+        },
+        "entityType": "LOCATION",
+        "sourceID": "2988507",
+        "componentName": "kari",
+        "description": "Capital of France",
+        "priority": 3,
+        "isEnabled": 1,
+        "relevanceScore": 100
+      }
+    ],
+    "query": "things to do in Paris",
+    "componentEnabled": true,
+    "keyword": [
+      {
+        "word": "things to do",
+        "description": ""
+      }
+    ],
+    "queryTerm": "things to do in paris",
+    "genericQuery": "things to do in HD_LOCATION__CITIES",
+    "unambiguous": true,
+    "queryRegex": "things\\s+to\\s+do\\s+(in|near)\\s+HD_LOCATION__([^\\s]+)(__\\w+)?.*",
+    "quickView": 3,
+    "suggestedPlace": "mainline",
+    "componentType": "internal"
+  },
+  {
+    "component": "kari",
+    "componentPrimaryName": "Tourism Explorer",
+    "templateID": 0,
+    "entities": [
+      {
+        "word": "Kyoto",
+        "wgID": 1002,
+        "wgName": "CITIES",
+        "collectionName": "CITIES",
+        "collectionType": "HD_LOCATION",
+        "wgUGC": 0,
+        "templateID": 0,
+        "entityInfo": {
+          "geo": {
+            "tz": "Asia/Tokyo",
+            "lat": 35.0116,
+            "city": "Kyoto",
+            "long": 135.7681,
+            "state": "Kyoto Prefecture",
+            "country": "Japan",
+            "countryCode": "JP"
+          },
+          "manual": 1,
+          "labelSource": "wiki"
+        },
+        "entityType": "LOCATION",
+        "sourceID": "1857910",
+        "componentName": "kari",
+        "description": "Historic cultural capital of Japan",
+        "priority": 3,
+        "isEnabled": 1,
+        "relevanceScore": 100
+      }
+    ],
+    "query": "places to visit in Kyoto",
+    "componentEnabled": true,
+    "keyword": [
+      {
+        "word": "places to visit",
+        "description": ""
+      }
+    ],
+    "queryTerm": "places to visit in kyoto",
+    "genericQuery": "places to visit in HD_LOCATION__CITIES",
+    "unambiguous": true,
+    "queryRegex": "places\\s+to\\s+visit\\s+(in|near)\\s+HD_LOCATION__([^\\s]+)(__\\w+)?.*",
+    "quickView": 3,
+    "suggestedPlace": "mainline",
+    "componentType": "internal"
+  },
+  {
+    "component": "kari",
+    "componentPrimaryName": "Tourism Explorer",
+    "templateID": 0,
+    "entities": [
+      {
+        "word": "Rome",
+        "wgID": 1003,
+        "wgName": "CITIES",
+        "collectionName": "CITIES",
+        "collectionType": "HD_LOCATION",
+        "wgUGC": 0,
+        "templateID": 0,
+        "entityInfo": {
+          "geo": {
+            "tz": "Europe/Rome",
+            "lat": 41.9028,
+            "city": "Rome",
+            "long": 12.4964,
+            "state": "Lazio",
+            "country": "Italy",
+            "countryCode": "IT"
+          },
+          "manual": 1,
+          "labelSource": "wiki"
+        },
+        "entityType": "LOCATION",
+        "sourceID": "3169070",
+        "componentName": "kari",
+        "description": "Capital of Italy and Eternal City",
+        "priority": 3,
+        "isEnabled": 1,
+        "relevanceScore": 100
+      }
+    ],
+    "query": "landmarks in Rome",
+    "componentEnabled": true,
+    "keyword": [
+      {
+        "word": "landmarks",
+        "description": ""
+      }
+    ],
+    "queryTerm": "landmarks in rome",
+    "genericQuery": "landmarks in HD_LOCATION__CITIES",
+    "unambiguous": true,
+    "queryRegex": "landmarks\\s+(in|near)\\s+HD_LOCATION__([^\\s]+)(__\\w+)?.*",
+    "quickView": 3,
+    "suggestedPlace": "mainline",
+    "componentType": "internal"
+  }
+]

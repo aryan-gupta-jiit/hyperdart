@@ -1,0 +1,93 @@
+{
+  "title": "Tourism Explorer",
+  "description": "Surfaces popular tourist attractions, landmarks, and points of interest for a given city with coordinates, category, and description using the Geoapify Places API.",
+  "componentScope": {
+    "supportedIntents": [
+      {
+        "intent": "tourism-attraction-search",
+        "description": "Queries requesting tourist attractions, sights, landmarks, museums, or points of interest for a given city or location.",
+        "example": [
+          "Tourist attractions in NYC",
+          "Things to do in Paris",
+          "Places to visit in Kyoto",
+          "Landmarks in Rome",
+          "Sights near Tokyo",
+          "Points of interest in London"
+        ]
+      }
+    ]
+  },
+  "schema": {
+    "$defs": {
+      "categories": {
+        "type": "string",
+        "description": "Tourism categories such as 'tourism.sights', 'tourism.attraction', 'heritage', 'building.historic', 'tourism.sights.museum', 'tourism.sights.monument', 'tourism.sights.viewpoint'."
+      },
+      "subtypes": {
+        "type": "string",
+        "description": "Subcategory of the attraction, e.g., 'Museum', 'Monument', 'Historical Site', 'Viewpoint', 'Park'."
+      },
+      "attributes": {
+        "type": "string",
+        "description": "Attributes of the tourist attraction: 'name', 'category', 'coordinates', 'description', 'address', 'distance'."
+      },
+      "minMaxRange": {
+        "type": "object",
+        "description": "Numeric range filter for search radius in meters or distance.",
+        "properties": {
+          "min": {
+            "type": "number",
+            "description": "Minimum value."
+          },
+          "max": {
+            "type": "number",
+            "description": "Maximum search radius in meters."
+          }
+        }
+      }
+    },
+    "type": "object",
+    "description": "Main query object defining the tourism search request.",
+    "properties": {
+      "type": {
+        "type": "string",
+        "description": "Kind of request: 'list' to retrieve attractions or 'query' for filtered data."
+      },
+      "filters": {
+        "type": "object",
+        "description": "Filters to narrow down attractions by city, category, radius, or coordinates.",
+        "properties": {
+          "city": {
+            "type": "string",
+            "description": "Target city name, e.g. 'New York', 'Paris', 'Kyoto'."
+          },
+          "category": {
+            "$ref": "#/$defs/categories"
+          },
+          "radius": {
+            "type": "number",
+            "description": "Search radius in meters around city center (e.g. 5000)."
+          },
+          "coordinates": {
+            "type": "object",
+            "properties": {
+              "lat": { "type": "number" },
+              "lon": { "type": "number" }
+            }
+          }
+        },
+        "additionalProperties": true
+      },
+      "features": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/attributes"
+        }
+      },
+      "entities": {
+        "collections": ["CITIES", "HD_LOCATION"]
+      }
+    },
+    "required": ["type", "filters", "features", "entities"]
+  }
+}
